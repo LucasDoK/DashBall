@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>DashBall</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      background: #222;
+      font-family: Arial, sans-serif;
+    }
+    canvas {
+      display: none;
+      margin: auto;
+      background: #3cba54;
+      box-shadow: 0 0 20px #000;
+    }
+    #menu {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(#111, #222);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    #menu h1 {
+      font-size: 40px;
+      margin-bottom: 30px;
+    }
+    #startButton {
+      padding: 15px 30px;
+      font-size: 18px;
+      background: #3cba54;
+      border: none;
+      color: white;
+      cursor: pointer;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+    #startButton:hover {
+      background: #2da344;
+    }
+  </style>
+</head>
+<body>
+
+<div id="menu">
+  <h1>⚽ DashBall</h1>
+  <button id="startButton">Começar Jogo</button>
+</div>
+
+<canvas id="gameCanvas" width="900" height="500"></canvas>
+
+<script src="game.js"></script>
+</body>
+</html>
